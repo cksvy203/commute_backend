@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/main.css">
-    <title>웹 로그인 페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <div class="wrapper">
-    <h1>웹 로그인 페이지</h1>
-    <form action="web_login.php" method="post">
-        <label for="username">사용자 이름:</label>
-        <input type="text" name="username" id="username" required><br><br>
-        <label for="password">암호:</label>
-        <input type="password" name="password" id="password" required><br><br>
-        <input type="submit" value="로그인">
-    </form>
+  <h1 class="h1">(주)하가</h1>
+  <div class="container">
+    <form action="web_login.php" method="POST">
+    <div class="input-container">
+      <input id="input1" type="text" placeholder="Email" />
     </div>
+    <div class="input-container">
+      <input id="input2" type="password" placeholder="Password" />
+    </div>
+    <input id="button" type="submit" value="로그인" />
+    </form>
+    <div class="button-container">
+        <a href="page/register.html" class="register-button">회원가입</a>
+        <a href="page/forgot-password.html" class="forgot-password-button">비밀번호 찾기</a>
+      </div>
+  </div>
 </body>
 </html>
